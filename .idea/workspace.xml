@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419277be-8f09-4137-ab1f-18c27a141d73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab03.1/Lab03.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/Lab03.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.1/test/com/math/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,12 +42,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.All in Lab03.1.executor": "Run",
+    "JUnit.All in Lab03.2.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testDivide.executor": "Run",
     "JUnit.CalculatorTest.testIsEven.executor": "Run",
+    "JUnit.HourlyEmployeeTest.executor": "Run",
+    "JUnit.HourlyEmployeeTest.testPayTaxes.executor": "Run",
+    "JUnit.SalariedEmployeeTest.testPay.executor": "Run",
+    "JUnit.SalariedEmployeeTest.testPayTaxes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Jasmin/StudentWork/IntmJ/workspace/Lab03.1",
+    "last_opened_file_path": "C:/Users/Jasmin/StudentWork/IntmJ/workspace/Lab03.2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,6 +64,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -50,61 +72,83 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jasmin\StudentWork\IntmJ\workspace\Lab01.2\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.entertainment.client" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.javatunes.personnel" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest">
-    <configuration name="All in Lab03.1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.1" />
+  <component name="RunManager" selected="JUnit.All in Lab03.2">
+    <configuration name="All in Lab03.2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.1" />
+    <configuration name="HourlyEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.math.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.math" />
-      <option name="MAIN_CLASS_NAME" value="com.math.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.HourlyEmployeeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.testDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.1" />
+    <configuration name="HourlyEmployeeTest.testPayTaxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.math.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.math" />
-      <option name="MAIN_CLASS_NAME" value="com.math.CalculatorTest" />
-      <option name="METHOD_NAME" value="testDivide" />
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.HourlyEmployeeTest" />
+      <option name="METHOD_NAME" value="testPayTaxes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.testIsEven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.1" />
+    <configuration name="SalariedEmployeeTest.testPay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.math.*" />
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.math" />
-      <option name="MAIN_CLASS_NAME" value="com.math.CalculatorTest" />
-      <option name="METHOD_NAME" value="testIsEven" />
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="METHOD_NAME" value="testPay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalariedEmployeeTest.testPayTaxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="METHOD_NAME" value="testPayTaxes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,10 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.testIsEven" />
-        <item itemvalue="JUnit.CalculatorTest.testDivide" />
-        <item itemvalue="JUnit.All in Lab03.1" />
+        <item itemvalue="JUnit.All in Lab03.2" />
+        <item itemvalue="JUnit.HourlyEmployeeTest" />
+        <item itemvalue="JUnit.HourlyEmployeeTest.testPayTaxes" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.testPay" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.testPayTaxes" />
       </list>
     </recent_temporary>
   </component>
@@ -137,11 +182,24 @@
       <updated>1721250427733</updated>
       <workItem from="1721250428755" duration="2734000" />
       <workItem from="1721314510467" duration="204000" />
-      <workItem from="1721314729972" duration="7330000" />
+      <workItem from="1721314729972" duration="11897000" />
     </task>
+    <task id="LOCAL-00001" summary="added lifecycle methods, before, after etc">
+      <option name="closed" value="true" />
+      <created>1721327162090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721327162090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added lifecycle methods, before, after etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lifecycle methods, before, after etc" />
   </component>
 </project>
