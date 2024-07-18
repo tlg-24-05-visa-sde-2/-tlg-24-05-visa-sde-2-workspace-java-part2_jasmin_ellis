@@ -10,12 +10,16 @@ import static org.junit.Assert.*;
 public class HourlyEmployeeTest {
     private HourlyEmployee emp;
 
+
+
     @Before
     public void setUp() {
         emp = new HourlyEmployee("Chris", Date.valueOf("2010-09-27"),
                 37.50,
                 25.0);
     }
+
+
 
     @Test
     public void testPayTaxes() {

@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419277be-8f09-4137-ab1f-18c27a141d73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab03.1/Lab03.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab03.2/Lab03.2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/HourlyEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/src/com/javatunes/personnel/SalariedEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +43,9 @@
     "JUnit.CalculatorTest.testIsEven.executor": "Run",
     "JUnit.HourlyEmployeeTest.executor": "Run",
     "JUnit.HourlyEmployeeTest.testPayTaxes.executor": "Run",
+    "JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary.executor": "Coverage",
+    "JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_sameHireDate_differentSalary.executor": "Run",
+    "JUnit.SalariedEmployeeTest.executor": "Run",
     "JUnit.SalariedEmployeeTest.testPay.executor": "Run",
     "JUnit.SalariedEmployeeTest.testPayTaxes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -82,7 +80,7 @@
       <recent name="com.javatunes.personnel" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Lab03.2">
+  <component name="RunManager" selected="JUnit.EmployeeTest">
     <configuration name="All in Lab03.2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HourlyEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
@@ -100,29 +98,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.HourlyEmployeeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HourlyEmployeeTest.testPayTaxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.HourlyEmployeeTest" />
-      <option name="METHOD_NAME" value="testPayTaxes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalariedEmployeeTest.testPay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalariedEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
@@ -132,13 +114,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
       <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="testPay" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalariedEmployeeTest.testPayTaxes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab03.2" />
       <extension name="coverage">
         <pattern>
@@ -148,7 +129,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
       <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="testPayTaxes" />
+      <option name="METHOD_NAME" value="equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
+      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
+      <option name="METHOD_NAME" value="equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeTest" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" />
+        <item itemvalue="JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" />
+        <item itemvalue="JUnit.SalariedEmployeeTest" />
         <item itemvalue="JUnit.All in Lab03.2" />
-        <item itemvalue="JUnit.HourlyEmployeeTest" />
-        <item itemvalue="JUnit.HourlyEmployeeTest.testPayTaxes" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.testPay" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.testPayTaxes" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +179,7 @@
       <updated>1721250427733</updated>
       <workItem from="1721250428755" duration="2734000" />
       <workItem from="1721314510467" duration="204000" />
-      <workItem from="1721314729972" duration="11897000" />
+      <workItem from="1721314729972" duration="14571000" />
     </task>
     <task id="LOCAL-00001" summary="added lifecycle methods, before, after etc">
       <option name="closed" value="true" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721327162090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pay() and payTaxes() tested in SE HE">
+      <option name="closed" value="true" />
+      <created>1721332157231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721332157231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +205,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added lifecycle methods, before, after etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lifecycle methods, before, after etc" />
+    <MESSAGE value="pay() and payTaxes() tested in SE HE" />
+    <option name="LAST_COMMIT_MESSAGE" value="pay() and payTaxes() tested in SE HE" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Java_Part2$SalariedEmployeeTest_equals_shouldReturnFalse_sameName_differentHireDate_sameSalary.ic" NAME="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary Coverage Results" MODIFIED="1721333826312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.javatunes.personnel.*</FILTER>
+    </SUITE>
   </component>
 </project>
