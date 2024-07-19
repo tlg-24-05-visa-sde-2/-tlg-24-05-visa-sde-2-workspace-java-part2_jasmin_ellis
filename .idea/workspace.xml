@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419277be-8f09-4137-ab1f-18c27a141d73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/EmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.3/Lab03.3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionBrandChannelComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionChannelComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab03.3/test/com/entertainment/TelevisionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab04.1-Extra/test/com/javatunes/catalog/InMemoryCatalogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab04.1/Lab04.11.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/HourlyEmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.2/test/com/javatunes/personnel/SalariedEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab03.3/src/com/entertainment/TelevisionChannelComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03.3/src/com/entertainment/TelevisionChannelComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab04.1-Extra/Lab04.1-Extra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1-Extra/Lab04.1-Extra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab04.1-Extra/src/com/javatunes/catalog/test/InMemoryCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04.1-Extra/src/com/javatunes/catalog/InMemoryCatalogTestMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -36,11 +44,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "JUnit.All in Lab03.1.executor": "Run",
     "JUnit.All in Lab03.2.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testDivide.executor": "Run",
     "JUnit.CalculatorTest.testIsEven.executor": "Run",
+    "JUnit.EmployeeTest.executor": "Run",
     "JUnit.HourlyEmployeeTest.executor": "Run",
     "JUnit.HourlyEmployeeTest.testPayTaxes.executor": "Run",
     "JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary.executor": "Coverage",
@@ -48,12 +58,20 @@
     "JUnit.SalariedEmployeeTest.executor": "Run",
     "JUnit.SalariedEmployeeTest.testPay.executor": "Run",
     "JUnit.SalariedEmployeeTest.testPayTaxes.executor": "Run",
+    "JUnit.TelevisionChannelComparatorTest.televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame.executor": "Run",
+    "JUnit.TelevisionTest.changeChannel_shouldThrowInvalidChannelException_whenInvalid_upperBound.executor": "Run",
+    "JUnit.TelevisionTest.executor": "Run",
+    "JUnit.TelevisionTest.setVolume_shouldStoreValue_whenValid.executor": "Run",
+    "JUnit.TelevisionTest.setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound.executor": "Coverage",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Jasmin/StudentWork/IntmJ/workspace/Lab03.2",
+    "last_opened_file_path": "C:/Users/Jasmin/StudentWork/IntmJ/workspace/Lab04.1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,78 +92,89 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.javatunes.catalog" />
       <recent name="com.entertainment.client" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.entertainment" />
       <recent name="com.javatunes.personnel" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
-    <configuration name="All in Lab03.2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
+  <component name="RunManager" selected="JUnit.TelevisionChannelComparatorTest.televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame">
+    <configuration name="TelevisionChannelComparatorTest.televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.entertainment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.EmployeeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalariedEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" />
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionChannelComparatorTest" />
+      <option name="METHOD_NAME" value="televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab03.2" />
+    <configuration name="TelevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javatunes.personnel.*" />
+          <option name="PATTERN" value="com.entertainment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.javatunes.personnel" />
-      <option name="MAIN_CLASS_NAME" value="com.javatunes.personnel.SalariedEmployeeTest" />
-      <option name="METHOD_NAME" value="equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" />
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionTest.changeChannel_shouldThrowInvalidChannelException_whenInvalid_upperBound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
+      <option name="METHOD_NAME" value="changeChannel_shouldThrowInvalidChannelException_whenInvalid_upperBound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionTest.setVolume_shouldStoreValue_whenValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
+      <option name="METHOD_NAME" value="setVolume_shouldStoreValue_whenValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionTest.setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab03.3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.entertainment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.entertainment" />
+      <option name="MAIN_CLASS_NAME" value="com.entertainment.TelevisionTest" />
+      <option name="METHOD_NAME" value="setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmployeeTest" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary" />
-        <item itemvalue="JUnit.SalariedEmployeeTest.equals_shouldReturnFalse_sameName_sameHireDate_differentSalary" />
-        <item itemvalue="JUnit.SalariedEmployeeTest" />
-        <item itemvalue="JUnit.All in Lab03.2" />
+        <item itemvalue="JUnit.TelevisionChannelComparatorTest.televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame" />
+        <item itemvalue="JUnit.TelevisionTest.changeChannel_shouldThrowInvalidChannelException_whenInvalid_upperBound" />
+        <item itemvalue="JUnit.TelevisionTest.setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound" />
+        <item itemvalue="JUnit.TelevisionTest" />
+        <item itemvalue="JUnit.TelevisionTest.setVolume_shouldStoreValue_whenValid" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +208,7 @@
       <updated>1721250427733</updated>
       <workItem from="1721250428755" duration="2734000" />
       <workItem from="1721314510467" duration="204000" />
-      <workItem from="1721314729972" duration="14571000" />
+      <workItem from="1721314729972" duration="32808000" />
     </task>
     <task id="LOCAL-00001" summary="added lifecycle methods, before, after etc">
       <option name="closed" value="true" />
@@ -197,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721332157231</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testing on hourly salary or employee salary">
+      <option name="closed" value="true" />
+      <created>1721335131286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721335131286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,10 +243,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added lifecycle methods, before, after etc" />
     <MESSAGE value="pay() and payTaxes() tested in SE HE" />
-    <option name="LAST_COMMIT_MESSAGE" value="pay() and payTaxes() tested in SE HE" />
+    <MESSAGE value="testing on hourly salary or employee salary" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing on hourly salary or employee salary" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Java_Part2$SalariedEmployeeTest_equals_shouldReturnFalse_sameName_differentHireDate_sameSalary.ic" NAME="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary Coverage Results" MODIFIED="1721333826312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/Java_Part2$TelevisionTest_setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound.ic" NAME="TelevisionTest.setVolume_shouldThrowIllegalArgumentException_whenInvalid_lowerBound Coverage Results" MODIFIED="1721401013627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.entertainment.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Java_Part2$TelevisionChannelComparatorTest_televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame.ic" NAME="TelevisionChannelComparatorTest.televisionChannelComparatorTest_ShouldReturnZero_WhenChannelsAreSame Coverage Results" MODIFIED="1721404846195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.entertainment.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Java_Part2$SalariedEmployeeTest_equals_shouldReturnFalse_sameName_differentHireDate_sameSalary.ic" NAME="SalariedEmployeeTest.equals_shouldReturnFalse_sameName_differentHireDate_sameSalary Coverage Results" MODIFIED="1721334759497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.javatunes.personnel.*</FILTER>
     </SUITE>
   </component>
