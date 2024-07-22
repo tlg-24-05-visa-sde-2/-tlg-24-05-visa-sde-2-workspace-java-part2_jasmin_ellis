@@ -8,41 +8,39 @@
 
 package com.javatunes.catalog;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 // OF COURSE THIS CLASS DOESN'T COMPILE
 // Your first job is to fulfill the contract that this class has signed.
 public class InMemoryCatalog implements Catalog {
 
     private final List<MusicItem> catalogData = new ArrayList<>(List.of(
-                   /* id    title                        artist                       releaseDate  price  musicCategory */
-        new MusicItem(1L,  "Diva",                      "Annie Lennox",              "1992-01-04", 13.99, MusicCategory.POP),
-        new MusicItem(2L,  "Dream of the Blue Turtles", "Sting",                     "1985-02-05", 14.99, MusicCategory.POP),
-        new MusicItem(3L,  "Trouble is...",             "Kenny Wayne Shepherd Band", "1997-08-08", 14.99, MusicCategory.BLUES),
-        new MusicItem(4L,  "Lie to Me",                 "Jonny Lang",                "1997-08-26", 17.97, MusicCategory.BLUES),
-        new MusicItem(5L,  "Little Earthquakes",        "Tori Amos",                 "1992-01-18", 14.99, MusicCategory.ALTERNATIVE),
-        new MusicItem(6L,  "Seal",                      "Seal",                      "1991-08-18", 17.97, MusicCategory.POP),
-        new MusicItem(7L,  "Ian Moore",                 "Ian Moore",                 "1993-12-05",  9.97, MusicCategory.CLASSICAL),
-        new MusicItem(8L,  "So Much for the Afterglow", "Everclear",                 "1997-01-19", 13.99, MusicCategory.ROCK),
-        new MusicItem(9L,  "Surfacing",                 "Sarah McLachlan",           "1997-12-04", 17.97, MusicCategory.ALTERNATIVE),
-        new MusicItem(10L, "Hysteria",                  "Def Leppard",               "1987-06-20", 17.97, MusicCategory.ROCK),
-        new MusicItem(11L, "A Life of Saturdays",       "Dexter Freebish",           "2000-12-06", 16.97, MusicCategory.RAP),
-        new MusicItem(12L, "Human Clay",                "Creed",                     "1999-10-21", 18.97, MusicCategory.ROCK),
-        new MusicItem(13L, "My, I'm Large",             "Bobs",                      "1987-02-20", 11.97, MusicCategory.COUNTRY),
-        new MusicItem(14L, "So",                        "Peter Gabriel",             "1986-10-03", 17.97, MusicCategory.POP),
-        new MusicItem(15L, "Big Ones",                  "Aerosmith",                 "1994-05-08", 18.97, MusicCategory.ROCK),
-        new MusicItem(16L, "90125",                     "Yes",                       "1983-10-16", 11.97, MusicCategory.ROCK),
-        new MusicItem(17L, "1984",                      "Van Halen",                 "1984-08-19", 11.97, MusicCategory.ROCK),
-        new MusicItem(18L, "Escape",                    "Journey",                   "1981-02-25", 11.97, MusicCategory.CLASSIC_ROCK))
+            /* id    title                        artist                       releaseDate  price  musicCategory */
+            new MusicItem(1L, "Diva", "Annie Lennox", "1992-01-04", 13.99, MusicCategory.POP),
+            new MusicItem(2L, "Dream of the Blue Turtles", "Sting", "1985-02-05", 14.99, MusicCategory.POP),
+            new MusicItem(3L, "Trouble is...", "Kenny Wayne Shepherd Band", "1997-08-08", 14.99, MusicCategory.BLUES),
+            new MusicItem(4L, "Lie to Me", "Jonny Lang", "1997-08-26", 17.97, MusicCategory.BLUES),
+            new MusicItem(5L, "Little Earthquakes", "Tori Amos", "1992-01-18", 14.99, MusicCategory.ALTERNATIVE),
+            new MusicItem(6L, "Seal", "Seal", "1991-08-18", 17.97, MusicCategory.POP),
+            new MusicItem(7L, "Ian Moore", "Ian Moore", "1993-12-05", 9.97, MusicCategory.CLASSICAL),
+            new MusicItem(8L, "So Much for the Afterglow", "Everclear", "1997-01-19", 13.99, MusicCategory.ROCK),
+            new MusicItem(9L, "Surfacing", "Sarah McLachlan", "1997-12-04", 17.97, MusicCategory.ALTERNATIVE),
+            new MusicItem(10L, "Hysteria", "Def Leppard", "1987-06-20", 17.97, MusicCategory.ROCK),
+            new MusicItem(11L, "A Life of Saturdays", "Dexter Freebish", "2000-12-06", 16.97, MusicCategory.RAP),
+            new MusicItem(12L, "Human Clay", "Creed", "1999-10-21", 18.97, MusicCategory.ROCK),
+            new MusicItem(13L, "My, I'm Large", "Bobs", "1987-02-20", 11.97, MusicCategory.COUNTRY),
+            new MusicItem(14L, "So", "Peter Gabriel", "1986-10-03", 17.97, MusicCategory.POP),
+            new MusicItem(15L, "Big Ones", "Aerosmith", "1994-05-08", 18.97, MusicCategory.ROCK),
+            new MusicItem(16L, "90125", "Yes", "1983-10-16", 11.97, MusicCategory.ROCK),
+            new MusicItem(17L, "1984", "Van Halen", "1984-08-19", 11.97, MusicCategory.ROCK),
+            new MusicItem(18L, "Escape", "Journey", "1981-02-25", 11.97, MusicCategory.CLASSIC_ROCK))
     );
 
     @Override
     public MusicItem findById(Long id) {
         MusicItem item = null;
-        for(MusicItem currentItem : catalogData ) {
-            if(currentItem.getId().equals(id)) {
+        for (MusicItem currentItem : catalogData) {
+            if (currentItem.getId().equals(id)) {
                 item = currentItem;
                 break;
             }
@@ -52,18 +50,30 @@ public class InMemoryCatalog implements Catalog {
 
     @Override
     public Collection<MusicItem> findByKeyword(String keyword) {
-        return List.of();
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        Collection<MusicItem> result = new ArrayList<>();
+
+        for (MusicItem currentItem : catalogData) {
+            if (currentItem.getTitle().equals(keyword) || currentItem.getArtist().equals(keyword) || currentItem.getReleaseDate().equals(Date.parse(keyword))){
+        }
     }
+        return result;
+    }
+
+
 
     @Override
     public Collection<MusicItem> findByCategory(MusicCategory category) {
-        for(MusicItem item : catalogData) {
-            if(item.getMusicCategory().equals(category)) {
+            Collection<MusicItem> result = new ArrayList<>();
+        for (MusicItem item : catalogData) {
+            if (item.getMusicCategory().equals(category)) {
                 result.add(item);
             }
         }
         return result;
     }
+
 
     @Override
     public int size() {
@@ -106,6 +116,16 @@ public class InMemoryCatalog implements Catalog {
     /*
      * TASK: find all "rock" items whose price is less than or equal to the specified price.
      */
+    public Collection<MusicItem> getRockGenre() {
+//        Collection<MusicItem> result = new ArrayList<>();
+//        double price = 15.00;
+//        for(MusicItem item : catalogData) {
+//            //set item to musicCategory
+//            if(item.getMusicCategory().equals(MusicCategory.ROCK)) &&(item.price < price) {
+//                result.add(item);
+//            }
+//        }
+    }
 
 
     /*
@@ -134,24 +154,24 @@ public class InMemoryCatalog implements Catalog {
      */
 
 
-    /**
+    /*
      * TASK: do we sell any items with the specified genre (MusicCategory)?
      * Another yes/no answer.
      */
 
 
-    /**
+    /*
      * TASK: find the titles of all "pop" items, sorted by natural order.
      * Just the titles!
      */
 
 
-    /**
+    /*
      * TASK: find all items released in the 80s whose price is less than or equal to the specified price.
      */
 
 
-    /**
+    /*
      * TASK: return a map whose keys are all the genres (categories), and each key's associated value
      * is a collection of items in that genre.  If there is a genre that we don't currently
      * sell, that key's associated value should be an empty collection, not null.
